@@ -157,7 +157,8 @@ High-performance Networking
 ├── Kernel TLS
 ├── SmartNIC and DPU offloading
 ├── NGINX and OpenSSL optimization
-└── 100 GbE performance analysis
+├── 100 GbE performance analysis
+└── 200 GbE performance analysis
 
 Platform Engineering
 ├── Containerized self-hosting
