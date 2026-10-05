@@ -41,6 +41,25 @@ My current interests include **high-performance networking**, **GPU inference op
 
 ## Selected Work
 
+### Kemonofantasy AI Platform
+
+[GitHub Repository](https://github.com/Kuco-dev/kemonofantasy-ai-platform) · In development and validation
+
+Developing a wiki-based AI web service for questions about fictional worlds and characters, character interpretation, and creative conversations. The project connects the web UI, API, asynchronous workers, databases, retrieval and inference pipelines, and deployment environment.
+
+* Built a wiki ingestion pipeline that maps redirects to canonical document aliases and preserves character attributes, affiliations, and origins from infoboxes
+* Expanded retrieval candidates and added exact-title matching to a **Qwen-based retrieval and reranking pipeline**, including FP32 reranking on a GTX 1650
+* Added answer citations and source previews, with response policies that distinguish wiki-grounded facts from character speculation, fan fiction, and roleplay
+* Built a live generation-progress UI with expandable stage timings, immediate display of submitted questions, message editing, an auto-resizing input, suggested questions, and conversation-based titles
+* Blocked unavailable models in both the selection UI and API, and improved Markdown and citation rendering while retaining restrictions on external images and raw HTML
+* Built sidebar-based settings and user profiles with activity statistics, annual heatmaps, model preferences, and usage patterns; added quota balances, reset times, 7- and 30-day token usage, and completed-response counts by model
+* Added Gravatar and avatar uploads with browser-based pan, zoom, and crop controls, plus server-side file validation, orientation correction, resizing, and WebP conversion using **Sharp**
+* Worked on wiki-linked account eligibility checks, sessions, and TOTP security; added configurable role badges, audit logs, a local test-account CLI with explicit eligibility exceptions, and database schema migrations
+* Managed web, API, worker, and shared packages in a **pnpm and Turborepo monorepo**, with Docker Compose builds, deployments, and database migrations
+* Ran Vitest tests, type checks, and linting, and used Playwright to check desktop and mobile layouts, image cropping, and CSP behavior; browser checks that use API mocks are not full end-to-end validation of live account integration
+
+Stack: **TypeScript · Python**, Next.js · React, Fastify, PostgreSQL · Prisma · Redis, Qwen · Qdrant, Sharp, pnpm · Turborepo, Vitest · Playwright · ESLint, Docker Compose · GitHub
+
 ### Secure Content Delivery Optimization
 
 * Researched secure content-transfer optimization using **Linux zero-copy and kTLS**
